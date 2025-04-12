@@ -89,7 +89,7 @@ def realizar_pedido():
             }
             with open("pedidos.json", "a") as f:
                 json.dump(pedido_data, f, indent=4)
-                f.write("\n")  # Para separar cada pedido en el archivo JSON
+                f.write("\n") 
             messagebox.showinfo("Pedido realizado", f"¡Gracias por su pedido! Pedido guardado en mesa {mesa}.")
             pedidoact.clear()
             actualizar_pedido()
